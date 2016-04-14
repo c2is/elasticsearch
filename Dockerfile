@@ -1,5 +1,3 @@
-FROM elasticsearch:1.7
+FROM elasticsearch:2.3.1
 
-CMD elasticsearch -Des.network.bind_host=0.0.0.0
-
-RUN /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head
+RUN /usr/share/elasticsearch/bin/plugin install mobz/elasticsearch-head
